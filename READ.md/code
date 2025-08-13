@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Launch - SuperGadget</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .product-description {
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            padding: 20px;
+            background: #f8f8f8;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Hero Section with Background Overlay */
+        .hero {
+            position: relative;
+            background: url("assets/images/product-hero.jpg") center/cover no-repeat;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(18, 1, 1);
+            text-align: center;
+            overflow: hidden;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 102, 255, 0.6);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            padding: 20px;
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .cta-button:hover {
+            background: #cc5200;
+        }
+
+        /* Features */
+        .features {
+            padding: 40px;
+            text-align: center;
+        }
+        .feature-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .feature-card {
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* ✅ New CSS for images */
+        .feature-card img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: #f0f0f0;
+            padding: 40px;
+            text-align: center;
+        }
+        .testimonial-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .testimonial-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+        .testimonial-card img {
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .stars {
+            margin-top: 10px;
+        }
+
+        /* Pricing */
+        .pricing {
+            padding: 40px;
+            text-align: center;
+        }
+        .pricing-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .price-card {
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            transition: transform 0.3s;
+        }
+        .price-card.featured {
+            border: 2px solid #ff6600;
+        }
+        .price-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Call to Action */
+        .call-to-action {
+            background: #0066ff;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>SuperGadget 3000</h1>
+            <p>The future of smart living in your hands</p>
+            <a href="#pricing" class="cta-button">Buy Now</a>
+            <!-- Product Description Section -->
+            <section class="product-description">
+                <p>
+                    The SuperGadget 3000 is a next-generation smart device designed to revolutionize the way you live, work, and connect. Combining cutting-edge AI integration, ultra-fast performance, and eco-friendly engineering, this gadget becomes your personal assistant, entertainment hub, and productivity tool — all in one sleek, portable package.
+                </p>
+                <p>
+                    The SuperGadget 3000 offers advanced cloud-based services that require continuous maintenance, updates, and secure server infrastructure. The subscription model ensures you get the latest features, unlimited cloud storage, and priority AI updates without buying a new device every year.
+                </p>
+            </section>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Features You'll Love</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <img src="Designer.png" alt="Feature 1">
+                <h3>Lightning Speed</h3>
+                <p>Experience unmatched performance with our latest processor.</p>
+            </div>
+            <div class="feature-card">
+                <img src="Designer2.png" alt="Feature 2">
+                <h3>Eco-Friendly</h3>
+                <p>Made from 100% recycled materials without compromising quality.</p>
+            </div>
+            <div class="feature-card">
+                <img src="designer3.png" alt="Feature 3">
+                <h3>Smart AI Integration</h3>
+                <p>Control your home, work, and life with intuitive AI features.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <img src="profile.png" alt="User 1" width="80">
+                <p>“The SuperGadget changed my life! Absolutely worth every penny.”</p>
+                <img src="star.png" alt="5 stars" class="stars" width="100">
+            </div>
+            <div class="testimonial-card">
+                <img src="profile.png" alt="User 2" width="80">
+                <p>“Incredible design, smooth performance, and eco-friendly. Love it!”</p>
+                <img src="star.png" alt="5 stars" class="stars" width="100">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+        <h2>Choose Your Plan</h2>
+        <div class="pricing-grid">
+            <div class="price-card">
+                <img src="basic.png" alt="Basic Plan" width="64">
+                <h3>Basic</h3>
+                <p>Rs-199</p>
+                <a href="#" class="cta-button">Buy Now</a>
+            </div>
+            <div class="price-card featured">
+                <img src="pro.png" alt="Pro Plan" width="64">
+                <h3>Pro</h3>
+                <p>Rs-299</p>
+                <a href="#" class="cta-button">Buy Now</a>
+            </div>
+            <div class="price-card">
+                <img src="premium.png" alt="Premium Plan" width="64">
+                <h3>Premium</h3>
+                <p>Rs-399</p>
+                <a href="#" class="cta-button">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="call-to-action">
+        <h2>Don't Miss Out!</h2>
+        <p>Order today and be among the first to own the future.</p>
+        <a href="#" class="cta-button">Order Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 SuperGadget Inc. | Contact: info@supergadget.com</p>
+    </footer>
+
+</body>
+</html>
